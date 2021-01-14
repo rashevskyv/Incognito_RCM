@@ -98,14 +98,7 @@ void panic(u32 val)
 
 void reboot_normal()
 {
-	bpmp_mmu_disable();
-
-	sd_unmount();
-	display_end();
-
-	nyx_str->mtc_cfg.init_done = 0;
-
-	panic(0x21); // Bypass fuse programming in package1.
+	launch_payload('sd:/payload.bin');
 }
 
 void reboot_rcm()

@@ -463,8 +463,7 @@ ment_t ment_top[] = {
     MDEF_CAPTION("---------------", COLOR_YELLOW),
     MDEF_HANDLER("Payloads...", launch_tools, COLOR_RED),
 	MDEF_CAPTION("---------------", COLOR_YELLOW),
-    MDEF_HANDLER("Reboot (Normal)", reboot_normal, COLOR_GREEN),
-    MDEF_HANDLER("Reboot (RCM)", reboot_rcm, COLOR_BLUE),
+    MDEF_HANDLER("Reboot to hekate", reboot_normal, COLOR_GREEN),
     MDEF_HANDLER("Power off", power_off, COLOR_VIOLET),
     MDEF_END()};
 
